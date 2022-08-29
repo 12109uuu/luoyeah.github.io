@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>关于洛耶 | LuoYeah の洞天</title>
+        <meta name="author" content="洛耶">
+        <meta name="description" content="">
+        <meta name="keywords" content="生活趣事,java见解,问题+答复">
+        <link rel="icon" href="https://s1.ax1x.com/2022/08/25/vgIrC9.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/test/fonts.min.css">
+        <link rel="stylesheet" href="/css/test/particlex.css">
+        
+        <script src="/js/click_show_text.js"></script>
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LuoYeah の洞天</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LuoYeah の洞天</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>关于洛耶 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/8/25
+        </span>
+        
+        
+    </div>
+    <div class="content" v-pre>
+        <h3 id="写博客的初衷"><a href="#写博客的初衷" class="headerlink" title="写博客的初衷"></a>写博客的初衷</h3><p>记录大学生活，提升自己。</p>
+<p>在我看来，探索未知的领域本身就很令人精神抖擞，但是如果收获的满足感不能及时记录下来，就会减少很多回顾的乐趣。我本身就是个爱总结的人，课后喜欢给课上内容列大纲，听完讲座会给自己做个讲座复盘，考完一场重要的考试也会着重回忆当时的总体思路和情绪变化。因此我能不断提升成就感，与自己的焦虑和解，从而舒畅地迈开步伐，由衷地期待明天。所以对我来讲，写博客的初衷更多的是通过总结提升自己，在这个充斥着“内卷焦虑”的互联网时代创造更多更美好的回忆。</p>
+<h3 id="选择Gitee和Hexo的理由"><a href="#选择Gitee和Hexo的理由" class="headerlink" title="选择Gitee和Hexo的理由"></a>选择Gitee和Hexo的理由</h3><p>首先，Gitee是<strong>开源中国（OSChina）</strong>推出的基于Git的代码托管服务</p>
+<p>其次，Hexo作者是中国台湾大学生<strong>tommy351</strong>，是一个开源的静态博客生成器，用node.js开发。</p>
+<p>最后，是我的选择理由。2022年初，俄罗斯和乌克兰在有关领土方面发生了一些冲突，大家应该都看过新闻。其实美国在局势打响时也下了很多功夫针对俄罗斯，Github就是这些功夫的其中之一。</p>
+<blockquote>
+<p><strong>封锁动作</strong>是从2022年4月13日起开始的，并且没有区分公司和个人所属的GitHub账号。</p>
+<p>比如Sberbank科技、SberbankAI实验室、阿尔法数据库实验室等俄罗斯企业的GitHub账号，<strong>先是代码托管项目被禁用，然后被从平台上整个删除</strong>。</p>
+</blockquote>
+<p>这一系列行为让我的脚步停滞了。我想的是，假如中国和美国发生了冲突，我肯定支持中国，但假如我的工作、我的学业甚至我的个人信息都被拿走，美好生活也会离我而去。因此我并不会把篮子都放在一个鸡蛋里（错乱），至少明白“狡兔三窟”的道理。</p>
+<p>或者换个想法，搭建个人博客也是我扩大个人资源的方式。假如我还是留在某个平台，那我也不得不看着每天的会员弹窗搞得写东西心烦意乱。有了自己的搭建的平台，怎样美化界面都和充钱与否没有关系，只要技术足够，就能做出让自己感到自豪的页面。</p>
+<p>接触了Gitee和Hexo，我的眼界也随之打开，或许有朝一日我也会拥有自己的私人服务器，这样的话就有更好的私人体验，但目前我的能力就到这里了，首页头像下面分别是Github、qq、b站和CSDN的个人空间，有兴趣可以加一下鞭策我（bushi）</p>
+<h3 id="自己的学习情况和目标"><a href="#自己的学习情况和目标" class="headerlink" title="自己的学习情况和目标"></a>自己的学习情况和目标</h3><p>目前在学习java，水平只是p3的程度，对编程语言的理解还有待提高。</p>
+<p>这里给自己定三个目标。</p>
+<p>第一个是一年小目标，争取java学到p5水平，独立制作一个让自己满意的程序。</p>
+<p>第二个是两年中目标，拿到实习offer，打磨自己的经历，让自己更早独当一面。</p>
+<p>第三个是四年大目标，获得大厂的认可，有个理想的工作环境，更多的自我提升机会！</p>
+<p>2022年8月25日，开学前夕，感谢终于搞定了博客的自己。虽然还有一些细枝末节没有处理好，但我会激励自己不忘初衷，砥砺前行。</p>
+
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2022 LuoYeah の洞天
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @洛耶
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <canvas id="fireworks" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:2147483647" ></canvas>
+        <script src="/js/fireworks.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <script src="/js/click_show_text.js"></script>
+        
+
+
+    </body>
+</html>

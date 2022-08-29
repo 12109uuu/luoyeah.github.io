@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>你好 Hexo(*^▽^*) | LuoYeah の洞天</title>
+        <meta name="author" content="洛耶">
+        <meta name="description" content="">
+        <meta name="keywords" content="生活趣事,java见解,问题+答复">
+        <link rel="icon" href="https://s1.ax1x.com/2022/08/25/vgIrC9.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/test/fonts.min.css">
+        <link rel="stylesheet" href="/css/test/particlex.css">
+        
+        <script src="/js/click_show_text.js"></script>
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+    <meta name="generator" content="Hexo 5.4.2"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LuoYeah の洞天</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LuoYeah の洞天</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>你好 Hexo(*^▽^*) </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/8/23
+        </span>
+        
+        <span class="category">
+            <a href="/categories/洛耶的伪教学/">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                洛耶的伪教学
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/万事开头难/" style="color: #ff7d73">
+                    万事开头难
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Hexo/" style="color: #00a596">
+                    Hexo
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Gitee/" style="color: #00bcd4">
+                    Gitee
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/生活记录/" style="color: #00bcd4">
+                    生活记录
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <p>关于独立博客的事，在没接触的时候是非常向往的。既可以不受平台限制，畅所欲言，又可以自己编辑个性化的页面，实现个人美化自由。一路上总是充满了各种困难，在克服困难后也能长舒一口气，这就是我对搭建博客初体验的感受。就用这篇生活记录来作为我在Hexo的第一篇博客吧！</p>
+<h3 id="搭建博客记录"><a href="#搭建博客记录" class="headerlink" title="搭建博客记录"></a>搭建博客记录</h3><h4 id="Gitee注册"><a href="#Gitee注册" class="headerlink" title="Gitee注册"></a>Gitee注册</h4><p>为什么把这个放前面呢，因为要想把自己的博客通过互联网分享给别人，就需要Pages服务</p>
+<p>目前Gitee和Github都有对应的仓库服务，这里讲一下Gitee（具体原因详见about）</p>
+<p>简单进行用户注册后，登录<a target="_blank" rel="noopener" href="https://gitee.com/dashboard">工作台 - Gitee.com</a>简单新建一个仓库。然后到设置里面把个人实名认证做了，不然没有服务权限。这个审核是真的费时间的emmm，我们可以继续搭建博客以等待审核。</p>
+<h4 id="Git、Node-js安装"><a href="#Git、Node-js安装" class="headerlink" title="Git、Node.js安装"></a>Git、Node.js安装</h4><p>具体安装路径</p>
+<ul>
+<li><p>从这里<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">git-scm.com</a>下载Git。</p>
+<p>安装后会发现右键菜单多了这两个选项。</p>
+ <img src="/2022/08/23/%E4%BD%A0%E5%A5%BD%EF%BC%8CHexo/image-20220825144152628.png" alt="image-20220825144152628" style="zoom:67% text-align:left;">
+
+<p>里面的Git Bash Here会在你鼠标所在的位置充当CMD控制台，如果想保持桌面整洁可以在任意地方新建一个文件夹进行后续安装工作。以后我们会经常用git命令做事。</p>
+</li>
+<li><p>从这里<a target="_blank" rel="noopener" href="https://nodejs.org/en/">nodejs.org</a>下载Node.js。</p>
+<p>这个就是给JavaScript一个适用的环境，毕竟我们搭建web网页不能只局限于一动不动的静态web，具有动态效果和交互效果才是我们追求的动态web。</p>
+</li>
+</ul>
+<p>接下来在刚刚的Git Bash（以下简称git）里通过查询版本测试一下安装是否成功</p>
+<pre><code class="git">git --version
+
+node -v
+
+npm -v
+</code></pre>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>首选进官网，看教程<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，具体步骤如下。</p>
+<p>1、在git里面输入指令</p>
+<pre><code class="git">npm install -g hexo-cli
+</code></pre>
+<p>2、初始化博客环境</p>
+<p>初始化的命令格式为 hexo init &lt;项目名称&gt;</p>
+<p>这里按照需求，将项目名称写作blog，不可随意更改。</p>
+<pre><code class="git">hexo init blog
+</code></pre>
+<p>3、新建完成后，指定文件夹目录下有以下内容，大致了解一下：</p>
+<pre><code>node_modules: 依赖包 暂时可以不管
+
+public：存放生成的页面 
+
+scaffolds：给出文章会用到的模板
+
+source：用来存放你的文章
+
+themes：主题，也可以称作搭建博客的框架，非常实用
+
+config.yml: 博客的配置文件，重点需要我们
+</code></pre>
+<h5 id="预览博客"><a href="#预览博客" class="headerlink" title="预览博客"></a>预览博客</h5><p>还记得我们的右键吗，初始化完成之后，就在blog文件夹下输入下面的指令</p>
+<pre><code class="git">hexo s
+</code></pre>
+<p>就可以访问 <a target="_blank" rel="noopener" href="http://localhost:4000/%E6%9F%A5%E7%9C%8B%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%8C%E5%BC%80%E5%A7%8B%E5%86%99%E4%BD%9C%E4%BA%86%E3%80%82">http://localhost:4000/查看你的博客，开始写作了。</a></p>
+<h4 id="后续写博客及入库工作"><a href="#后续写博客及入库工作" class="headerlink" title="后续写博客及入库工作"></a>后续写博客及入库工作</h4><h5 id="1、本地启动项目"><a href="#1、本地启动项目" class="headerlink" title="1、本地启动项目"></a>1、本地启动项目</h5><p>（s 表示 server ）</p>
+<pre><code class="yaml">hexo s/server     #启动服务预览 
+
+hexo s -p 端口号   #重置端口号 
+</code></pre>
+<p>如：</p>
+<pre><code class="yaml">hexo server -p 5000 
+
+hexo server -i 192.168.1.1 #自定义 IP
+</code></pre>
+<h5 id="2、创建新的博客"><a href="#2、创建新的博客" class="headerlink" title="2、创建新的博客"></a>2、创建新的博客</h5><pre><code class="yaml">hexo n [layout] &lt;title&gt;
+</code></pre>
+<p>如：</p>
+<pre><code class="yaml">hexo new &quot;欢迎你，新来的旅客&quot; 
+
+hexo new page &quot;pageName&quot; #新建页面 
+</code></pre>
+<p>*layout 表示文章布局，可选（post page draft）</p>
+<p>默认使用 _config.yml 中的 default_layout 参数代替（post）</p>
+<p>*title 表示文章标题，如果标题包含空格的话，请使用引号括起来。</p>
+<h5 id="3、基本配置修改"><a href="#3、基本配置修改" class="headerlink" title="3、基本配置修改"></a>3、基本配置修改</h5><p>Hexo站点的基本设置主要包括：</p>
+<p><strong>首页标题</strong>、<strong>子标题</strong>、<strong>简介</strong>、<strong>关键词</strong>（英文,隔开）、<strong>作者</strong>、 <strong>语言</strong>和<strong>时区</strong></p>
+<p>这些都需要修改，这样才算自己的网站嘛。</p>
+<pre><code class="yaml"># Site 
+title: 洛耶的龟龟洞天
+
+subtitle: &#39;直接开卷&#39; 
+
+description: &#39;记录思考时刻、java 笔记，由 Hexo+Gitee 搭建。&#39; 
+
+keywords: 生活趣事,java见解,问题+答复
+
+author: 洛耶
+
+language: zh-CN 
+
+timezone: &#39;Asia/Jiangsu&#39;
+</code></pre>
+<p>主要参数如下</p>
+<pre><code class="yaml">title: # 标题
+subtitle: # 副标题
+description: # 描述
+keywords: # 关键字
+author: # 作者
+language: # 语言
+timezone: # 时区
+url: # 网址
+root: # 根目录
+permalink: # 文章链接格式
+permalink_defaults: # 链接默认值
+source_dir: # 源文件夹，内容的存储位置
+public_dir: # 公用文件夹，静态文件的生成位置
+tag_dir: # 标签目录
+archive_dir: # 存档目录
+category_dir: # 分类目录
+skip_render: # 复制到原始路径，不进行渲染
+new_post_name: # 新帖子的文件名格式
+titlecase: # 将标题转换为小写1/大写2 *
+external_link.enable: # 在新标签页中打开外部链接
+post_asset_folder: # 启用资源文件夹功能
+filename_case: # 将文件名转换小写小写1/大写2
+relative_link: # 是否创建相对于根文件夹的链接
+index_generator.per_page: # 每页显示的文章数
+index_generator.order_by: # 发布顺序
+date_format: # 日期格式
+time_format: # 时间格式
+per_page: # 每个页面上显示的文章数
+pagination_dir: # 网址格式
+theme: # 主题名称
+theme_config: # 主题配置，覆盖主题默认值
+deploy: # 部署设置
+include: # 包括隐藏文件
+exclude: # 排除文件/文件夹
+ignore: # 忽略文件/文件夹
+</code></pre>
+<p>重启下 Hexo 服务，我们刷新页面，就会发现上面的修改生效啦～</p>
+<p>如果想看更多内容，不放去hexo官网查看更多git命令</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">https://hexo.io/docs/one-command-deployment.html</a>)</p>
+
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2022 LuoYeah の洞天
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @洛耶
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <canvas id="fireworks" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:2147483647" ></canvas>
+        <script src="/js/fireworks.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <script src="/js/click_show_text.js"></script>
+        
+
+
+    </body>
+</html>
